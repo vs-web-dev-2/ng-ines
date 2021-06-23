@@ -1,1 +1,7 @@
-<p>cotizaciones works!</p>
+<ul>
+    <li *ngFor="let cotizacion of cotizaciones">
+      <span class="divisa">{{ cotizacion.divisa }}: </span>
+      <span class="contravalor"> {{ cotizacion.contravalor }} €</span>
+    </li>
+  </ul>
+  

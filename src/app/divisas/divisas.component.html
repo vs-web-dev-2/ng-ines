@@ -1,8 +1,8 @@
 <header>
-    <h1>Últimas cotizaciones del Euro</h1>
-  </header>
-  <main *ngIf="cargado===true">
-    <h2>Fecha: <time> {{ fecha | date:'dd/MM/yy' }} </time> </h2>
-    <app-cotizaciones [cotizaciones]="cotizaciones"></app-cotizaciones>
-  </main>
-  <div *ngIf="cargado===false"> 💫 Cargando datos, espere por favor.... ⌛ </div>
+  <h1>Últimas cotizaciones del Euro</h1>
+</header>
+<main *ngIf="cargado===true">
+  <h2>Fecha: <time> {{ fecha | date:'dd/MM/yy' }} </time> </h2>
+  <app-cotizaciones [cotizaciones]="cotizaciones"></app-cotizaciones>
+</main>
+<div *ngIf="cargado===false"> 💫 Cargando datos, espere por favor.... ⌛ </div>
